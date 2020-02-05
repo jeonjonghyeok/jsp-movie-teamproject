@@ -8,10 +8,10 @@
 	<listener>
 		<listener-class>jdbc.DBCPInitListener</listener-class>
 	</listener>
-<!-- 
+
 	<welcome-file-list>
-		<welcome-file>/yummy-master/index.html</welcome-file>
-	</welcome-file-list> -->
+		<welcome-file>/template/index.jsp</welcome-file>
+	</welcome-file-list>
 
 	<context-param>
 		<param-name>poolConfig</param-name>
@@ -19,7 +19,7 @@
 			jdbcdriver=oracle.jdbc.driver.OracleDriver
 			jdbcUrl=jdbc:oracle:thin:@localhost:1521:xe
 			dbUser=scott
-			dbPass=tiger
+			dbPass=TIGER
 			validationQuery=select 1
 			minIdle=3
 			maxTotal=30
