@@ -30,9 +30,12 @@
 </head>
 
 <body class="hold-transition login-page">
+<div class="col-3 col-md-3 col-lg-3">
+<div class="login-page">
+<div class="logo_area text-center">
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index.html"><b>All In Movie</b></a>
+    <a href="../../index.html"><b></b></a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -63,6 +66,8 @@
             </label>
           </div>
         </div>
+        </div>
+        
         <!-- /.col -->
         <div class="col-xs-4">
           <button type="submit" href="index.html" class="btn btn-primary btn-block btn-flat">로그인</button>
@@ -84,7 +89,9 @@
     <a href="join.do" class="text-center">신규 가입</a>
 
   </div>
+  </div>
   <!-- /.login-box-body -->
+</div>
 </div>
 <!-- /.login-box -->
 

@@ -58,11 +58,11 @@
                 <!--  Login Register Area -->
 
                     <div class="col-7 col-sm-6">
-                <div class="nav-link signup-search-area d-flex align-items-center justify-content-end" href="loginForm.jsp" id="yummyDropdown" role="button"  aria-haspopup="true" aria-expanded="false">
+                <div class="nav-link signup-search-area d-flex align-items-center justify-content-end" href="login.do" id="yummyDropdown" role="button"  aria-haspopup="true" aria-expanded="false">
                     <!-- <div class="signup-search-area d-flex align-items-center justify-content-end"> -->
                          <div class="login_register_area d-flex">
                             <div class="login">
-                            <a href="loginForm.jsp">Login</a>
+                            <a href="login.do">Login</a>
                             <li class="nav-item">
                                 </li>
                                 </div>
@@ -104,7 +104,7 @@
                                 <li class="nav-item active">
                                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                                 </li>
-                                <li class="nav-item dropdown">
+                                <!-- <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="yummyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
                                     <div class="dropdown-menu" aria-labelledby="yummyDropdown">
                                         <a class="dropdown-item" href="index.do">Home</a>
@@ -113,21 +113,21 @@
                                         <a class="dropdown-item" href="static.html">Static Page</a>
                                         <a class="dropdown-item" href="contact.do">Contact</a>
                                     </div>
-                                </li>
+                                </li> -->
+                               <!--  <li class="nav-item">
+                                    <a class="nav-link" href="#"></a>
+                                </li> -->
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Categories</a>
+                                    <a class="nav-link" href="#">예매</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="snack.do">Snack</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
+                                    <a class="nav-link" href="#">Q & A</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.do">Contact</a>
+                                    <a class="nav-link" href="contact.do">찾아오시는 길</a>
                                 </li>
                             </ul>
                         </div>
