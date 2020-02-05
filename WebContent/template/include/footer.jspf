@@ -57,15 +57,15 @@
 								<li class="nav-item active"><a class="nav-link" href="#">Home
 										<span class="sr-only">(current)</span>
 								</a></li>
-								<li class="nav-item"><a class="nav-link" href="#">Features</a>
+								<li class="nav-item"><a class="nav-link" href="#">예매</a>
 								</li>
-								<li class="nav-item"><a class="nav-link" href="#">Categories</a>
+								<!-- <li class="nav-item"><a class="nav-link" href="#">Categories</a>
+								</li> -->
+								<li class="nav-item"><a class="nav-link" href="#">Snack</a>
 								</li>
-								<li class="nav-item"><a class="nav-link" href="#">Archive</a>
+								<li class="nav-item"><a class="nav-link" href="#">Q & A</a>
 								</li>
-								<li class="nav-item"><a class="nav-link" href="#">About</a>
-								</li>
-								<li class="nav-item"><a class="nav-link" href="#">Contact</a>
+								<li class="nav-item"><a class="nav-link" href="#">찾아오시는 길</a>
 								</li>
 							</ul>
 						</div>

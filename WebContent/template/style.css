@@ -369,7 +369,9 @@ li {
     margin-right: 13px;
     border-right: 2px solid #c2c2c2;
     padding-right: 13px;
+    
 }
+
 
 .top_header_area .signup-search-area .search_button {
     margin-left: 54px;
@@ -1487,8 +1489,4 @@ li {
 	color: #fff;
 	cursor: pointer;
 }
-.col-3 col-md-3 col-lg-3 login-page{
-	margin: 1100px;
-	
-	
-}
+
