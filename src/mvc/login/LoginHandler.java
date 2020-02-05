@@ -10,7 +10,7 @@ public class LoginHandler implements CommandHandler {
 	@Override
 	public String process(HttpServletRequest req, HttpServletResponse res) {
 		//req.setAttribute("login", "안녕하세요!");
-		return "/template/js/loginForm.jsp";
+		return "/template/loginForm.jsp";
 	}
 
 }

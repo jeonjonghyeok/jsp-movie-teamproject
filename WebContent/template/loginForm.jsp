@@ -35,7 +35,7 @@
 <div class="login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index.html"><b></b></a>
+    <a href="../../index.jsp"><b></b></a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -50,7 +50,7 @@
 	</c:choose>
     
     <div class="col-12">
-    <form action="/template/login.do" method="post">
+    <form action="login.do" method="post">
     <div class="logo_area text-center">
       <div class="form-group has-feedback">
         <input type="text" name="id" class="form-control" placeholder="아이디">

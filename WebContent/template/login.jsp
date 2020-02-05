@@ -18,7 +18,7 @@
 	
 	if (id.equals(password)) {
 		session.setAttribute("MEMBER", id);
-		response.sendRedirect("../js/index.jsp");
+		response.sendRedirect("../../index.jsp");
 	} else { // 로그인 실패시
 %>
 
