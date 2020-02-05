@@ -35,22 +35,22 @@
 <div class="login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index.html"><b></b></a>
+    <a href="index.do"><b></b></a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
   
     <c:choose>
 		<c:when test="${errors.idOrPwNotMatch}">
-		 <p class="login-box-msg">아이디와 암호가 일치하지 않습니다.</p>
+		 <p class="login-box-msg"><b>아이디와 암호가 일치하지 않습니다.</b></p>
 		</c:when>
 		<c:otherwise>
-		 <p class="login-box-msg">로그인 정보를 입력하세요.</p>
+		 <p class="login-box-msg"><b>로그인 정보를 입력하세요.</b></p>
 		</c:otherwise>
 	</c:choose>
     
     <div class="col-12">
-    <form action="/template/login.do" method="post">
+    <form action="login.do" method="post">
     <div class="logo_area text-center">
       <div class="form-group has-feedback">
         <input type="text" name="id" class="form-control" placeholder="아이디">
@@ -74,23 +74,24 @@
         
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">로그인</button>
+          <button type="submit" class="btn btn-primary btn-block btn-flat"
+          background-color="#fc6c3f">로그인</button>
         </div>
         <!-- /.col -->
       </div>
     </form>
     </div>
-
+<!-- 
     <div class="social-auth-links text-center">
       <p>- OR -</p>
       <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using
         Facebook</a>
       <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in using
         Google+</a>
-    </div>
+    </div> -->
     <!-- /.social-auth-links -->
 
-    <a href="#">I forgot my password</a><br>
+    <a href="#" color="orange">I forgot my password</a><br>
     <a href="join.do" class="text-center">신규 가입</a>
 
   </div>
