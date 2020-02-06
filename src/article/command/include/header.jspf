@@ -26,6 +26,7 @@
     <link href="${pageContext.request.contextPath}/template/css/responsive/responsive.css" rel="stylesheet">
 
 </head>
+
 <body>
     <!-- Preloader Start -->
     <div id="preloader">
@@ -62,12 +63,12 @@
                          <div class="login_register_area d-flex">
                             <div class="login">
                             <a href="login.do">Login</a>
-                           <li class="nav-item">
-                                </li> 
+                          <li class="nav-item">
+                                </li>
                                 </div>
                             </div>
-                      
-                  </div> 
+							 
+						</div> 
                     </div>
                   
                 </div>
@@ -118,7 +119,7 @@
                                     <a class="nav-link" href="snack.do">Snack</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="write.do">Q & A</a>
+                                    <a class="nav-link" href="write.do"> Q & A</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.do">찾아오시는 길</a>

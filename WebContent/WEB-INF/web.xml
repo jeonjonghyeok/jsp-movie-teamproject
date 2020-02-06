@@ -60,8 +60,8 @@
 	</servlet-mapping>
 
 
-
-	<!-- <filter>
+<!-- 
+	<filter>
 		<filter-name>LoginCheckFilter</filter-name>
 		<filter-class>filter.LoginCheckFilter</filter-class>
 	</filter>
@@ -70,6 +70,6 @@
 		<url-pattern>/changePwd.do</url-pattern>
 		<url-pattern>/article/write.do</url-pattern>
 		<url-pattern>/article/modify.do</url-pattern>
-	</filter-mapping> -->
+	</filter-mapping>  -->
 
 </web-app>
