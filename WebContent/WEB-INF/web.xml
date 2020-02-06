@@ -18,8 +18,8 @@
 		<param-value>
 			jdbcdriver=oracle.jdbc.driver.OracleDriver
 			jdbcUrl=jdbc:oracle:thin:@localhost:1521:xe
-			dbUser=scott
-			dbPass=TIGER
+			dbUser=MOVIE
+			dbPass=MOVIE
 			validationQuery=select 1
 			minIdle=3
 			maxTotal=30

@@ -89,7 +89,7 @@
                 <!-- Logo Area Start -->
                 <div class="col-12">
                     <div class="logo_area text-center">
-                        <a href="index.html" class="yummy-logo">All In Movie</a>
+                        <a href="index.do" class="yummy-logo">All In Movie</a>
                     </div>
                 </div>
             </div>

@@ -7,6 +7,17 @@
 
     <!-- ****** Welcome Post Area Start ****** -->
     <section class="welcome-post-sliders owl-carousel">
+<c:forEach var="movie" items="${movieList}">
+	<tr>
+		<td>${movie.name}</td>
+		<td>
+<%-- 		<a href="read.do?no=${movie.id}&pageNo=${articlePage.currentPage}"> --%>
+		<c:out value="${movie.name}"/>
+		</a>
+		</td>
+		<td>${movie.name}</td>
+	</tr>
+</c:forEach>
 
         <!-- Single Slide -->
         <div class="welcome-single-slide">
@@ -19,7 +30,13 @@
                     <a href="#">15세 관람가</a>
                 </div>
                 <a href="#">
-                    <h5>남산의 부장들</h5>
+                    <h5>
+				<c:forEach var="movie" items="${movieList}">
+				${movie.name}
+				</c:forEach>
+						
+
+</h5>
                 </a>
             </div>
         </div>
