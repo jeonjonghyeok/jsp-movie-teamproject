@@ -13,7 +13,7 @@ import mvc.command.CommandHandler;
 
 public class IndexHandler implements CommandHandler {
 
-	private static final String FORM_VIEW = "/template/js/index.jsp";
+	private static final String FORM_VIEW = "/template/index.jsp";
 	private LoginService loginService = new LoginService();
 
 	@Override

@@ -35,11 +35,8 @@
 <div class="login-page">
 <div class="login-box">
   <div class="login-logo">
-<<<<<<< HEAD
-    <a href="index.do"><b></b></a>
-=======
-    <a href="../../index.jsp"><b></b></a>
->>>>>>> 2f04d083886a0ff80c63f85cd91a23742c11eacf
+   <a href="index.do"><b></b></a>
+
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -54,7 +51,7 @@
 	</c:choose>
     
     <div class="col-12">
-    <form action="login.do" method="post">
+    <form action="index.do" method="post">
     <div class="logo_area text-center">
       <div class="form-group has-feedback">
         <input type="text" name="id" class="form-control" placeholder="아이디">
@@ -78,8 +75,9 @@
         
         <!-- /.col -->
         <div class="col-xs-4">
+        <a href="index.do">
           <button type="submit" class="btn btn-primary btn-block btn-flat"
-          background-color="#fc6c3f">로그인</button>
+          background-color="#fc6c3f">로그인</button></a>
         </div>
         <!-- /.col -->
       </div>
