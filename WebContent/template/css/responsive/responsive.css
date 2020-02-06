@@ -80,6 +80,9 @@
     }
     #googleMap {
         height: 300px;
+    } 
+    #map {
+        height: 300px;
     }
     .comment-wrapper .comment-author {
         width: 50px;
@@ -104,6 +107,9 @@
     #googleMap {
         height: 400px;
     }
+    #map {
+        height: 400px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -111,6 +117,8 @@
         margin-top: 0;
     }
     #googleMap {
+        height: 500px;
+    } #map {
         height: 500px;
     }
     .comment-wrapper .comment-author {
