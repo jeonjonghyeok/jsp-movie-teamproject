@@ -74,7 +74,7 @@
         
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">로그인</button>
+          <button type="submit" class="btn btn-primary btn-block btn-flat"><a herf="index.jsp">로그인</a></button>
         </div>
         <!-- /.col -->
       </div>
