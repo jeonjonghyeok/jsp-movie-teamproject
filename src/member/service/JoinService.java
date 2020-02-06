@@ -19,7 +19,7 @@ public class JoinService {
 			conn = ConnectionProvider.getConnection();
 			conn.setAutoCommit(false);
 			
-			Member member = memberDao.selectById(conn, joinReq.getId());
+			Member member = memberDao.selectById(conn, joinReq.getCLIENT_ID());
 			if (member != null) {
 				JdbcUtil.rollback(conn);
 				throw new DuplicateIdException();
@@ -27,9 +27,12 @@ public class JoinService {
 			
 			memberDao.insert(conn, 
 					new Member(
-							joinReq.getId(), 
-							joinReq.getName(), 
-							joinReq.getPassword(), 
+							joinReq.getCLIENT_ID(), 
+							joinReq.getCLIENT_NAME(), 
+							joinReq.getCLIENT_SSN(), 
+							joinReq.getCLIENT_CTN(), 
+							joinReq.getCLIENT_MAIL(), 
+							joinReq.getCLIENT_PWD(), 
 							new Date())
 					);
 			conn.commit();

@@ -13,7 +13,7 @@ import mvc.command.CommandHandler;
 
 public class JoinHandler implements CommandHandler {
 
-	private static final String FORM_VIEW ="/WEB-INF/view/login/register.jsp";
+	private static final String FORM_VIEW ="/template/joinForm.jsp";
 	private JoinService joinService = new JoinService();
 	
 	@Override
@@ -34,9 +34,12 @@ public class JoinHandler implements CommandHandler {
 
 	private String processSubmit(HttpServletRequest req, HttpServletResponse res) {
 		JoinRequest joinReq = new JoinRequest();
-		joinReq.setId(req.getParameter("id"));
-		joinReq.setName(req.getParameter("name"));
-		joinReq.setPassword(req.getParameter("password"));
+		joinReq.setCLIENT_ID(req.getParameter("CLIENT_ID"));
+		joinReq.setCLIENT_NAME(req.getParameter("CLIENT_NAME"));
+		/* joinReq.setCLIENT_SSN(req.getParameter("CLIENT_SSN")); */
+		joinReq.setCLIENT_CTN(req.getParameter("CLIENT_CTN"));
+		joinReq.setCLIENT_MAIL(req.getParameter("CLIENT_MAIL"));
+		joinReq.setCLIENT_PWD(req.getParameter("CLIENT_PWD"));
 		joinReq.setConfirmPassword(req.getParameter("confirmPassword"));
 		
 		Map<String, Boolean> errors = new HashMap<>();
@@ -52,7 +55,7 @@ public class JoinHandler implements CommandHandler {
 		
 		try {
 			joinService.join(joinReq);
-			return "/WEB-INF/view/login/joinSuccess.jsp";
+			return "/template/joinSuccess.jsp";
 		} catch (DuplicateIdException e) {
 			errors.put("duplicateId", Boolean.TRUE);
 			return FORM_VIEW;
