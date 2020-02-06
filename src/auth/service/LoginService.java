@@ -11,16 +11,16 @@ public class LoginService {
 
 	private MemberDao memberDao = new MemberDao();
 
-	public User login(String id, String password) {
+	public User login(String CLIENT_ID, String CLIENT_PWD) {
 		try (Connection conn = ConnectionProvider.getConnection()) {
-			Member member = memberDao.selectById(conn, id);
+			Member member = memberDao.selectById(conn, CLIENT_ID);
 			if (member == null) {
 				throw new LoginFailException();
 			}
-			if (!member.matchPassword(password)) {
+			if (!member.matchCLIENT_PWD(CLIENT_PWD)) {
 				throw new LoginFailException();
 			}
-			return new User(member.getId(), member.getName());
+			return new User(member.getCLIENT_ID(), member.getCLIENT_NAME());
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}

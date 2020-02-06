@@ -23,9 +23,12 @@ public class MemberDao {
 			Member member = null;
 			if (rs.next()) {
 				member = new Member(
-						rs.getString("memberid"), 
-						rs.getString("name"), 
-						rs.getString("password"),
+						rs.getString("memberCLIENT_ID"), 
+						rs.getString("CLIENT_NAME"), 
+						rs.getString("CLIENT_SSN"), 
+						rs.getString("CLIENT_CTN"), 
+						rs.getString("CLIENT_MAIL"), 
+						rs.getString("CLIENT_PWD"),
 						toDate(rs.getTimestamp("regdate")));
 			}
 			return member;
@@ -42,10 +45,13 @@ public class MemberDao {
 	public void insert(Connection conn, Member mem) throws SQLException {
 		try (PreparedStatement pstmt = 
 				conn.prepareStatement("insert into member values(?,?,?,?)")) {
-			pstmt.setString(1, mem.getId());
-			pstmt.setString(2, mem.getName());
-			pstmt.setString(3, mem.getPassword());
-			pstmt.setTimestamp(4, new Timestamp(mem.getRegDate().getTime()));
+			pstmt.setString(1, mem.getCLIENT_ID());
+			pstmt.setString(2, mem.getCLIENT_NAME());
+			pstmt.setString(3, mem.getCLIENT_SSN());
+			pstmt.setString(4, mem.getCLIENT_CTN());
+			pstmt.setString(5, mem.getCLIENT_MAIL());
+			pstmt.setString(6, mem.getCLIENT_PWD());
+			pstmt.setTimestamp(7, new Timestamp(mem.getRegDate().getTime()));
 			pstmt.executeUpdate();
 		}
 	}
@@ -53,9 +59,12 @@ public class MemberDao {
 	public void update(Connection conn, Member member) throws SQLException {
 		try (PreparedStatement pstmt = conn.prepareStatement(
 				"update member set name = ?, password = ? where memberid = ?")) {
-			pstmt.setString(1, member.getName());
-			pstmt.setString(2, member.getPassword());
-			pstmt.setString(3, member.getId());
+			pstmt.setString(1, member.getCLIENT_NAME());
+			pstmt.setString(2, member.getCLIENT_PWD());
+			pstmt.setString(3, member.getCLIENT_ID());
+			pstmt.setString(4, member.getCLIENT_SSN());
+			pstmt.setString(5, member.getCLIENT_CTN());
+			pstmt.setString(6, member.getCLIENT_MAIL());
 			pstmt.executeUpdate();
 		}
 	}
