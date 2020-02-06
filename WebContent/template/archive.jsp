@@ -7,7 +7,7 @@
     <!-- ****** Header Area End ****** -->
 
     <!-- ****** Breadcumb Area Start ****** -->
-    <div class="breadcumb-area" style="background-image: url(${pageContext.request.contextPath}/template/img/bg-img/1.jpg);">
+    <div class="breadcumb-area" style="background-image: url(${pageContext.request.contextPath}/template/img/blog-img/1.PNG);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">

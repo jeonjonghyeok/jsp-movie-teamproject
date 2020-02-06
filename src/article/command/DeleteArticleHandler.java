@@ -19,7 +19,7 @@ import auth.service.User;
 import mvc.command.CommandHandler;
 
 public class DeleteArticleHandler implements CommandHandler {
-	private static final String FORM_VIEW = "/WEB-INF/view/article/deleteForm.jsp";
+	private static final String FORM_VIEW = "/template/deleteForm.jsp";
 
 	 private ReadArticleService readService = new ReadArticleService();
 	private DeleteArticleService deleteService = new DeleteArticleService();
@@ -84,7 +84,7 @@ public class DeleteArticleHandler implements CommandHandler {
 		}
 		try {
 			deleteService.delete(delReq);
-			return "/WEB-INF/view/article/deleteSuccess.jsp";
+			return "/template/deleteSuccess.jsp";
 		} catch (ArticleNotFoundException e) {
 			res.sendError(HttpServletResponse.SC_NOT_FOUND);
 			return null;
